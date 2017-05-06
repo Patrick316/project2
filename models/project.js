@@ -1,26 +1,13 @@
+'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Post = sequelize.define("Post", {
-    Username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
+  var project = sequelize.define('project', {
+    name: DataTypes.STRING
+  }, {
+    classMethods: {
+      associate: function(models) {
+        // associations can be defined here
       }
-    },
-    Email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      len: [1]
-    },
-      UserPicAddress: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      len: [1]
-    },
-    HomeAddress: {
-      type: DataTypes.TEXT,
-      defaultValue: "Personal"
     }
   });
-  return Project;
+  return project;
 };
