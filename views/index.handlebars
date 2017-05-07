@@ -1,0 +1,28 @@
+
+
+        <form class="create-update-form" action="/salad" method="POST">
+
+          <div class="form-group">
+                      <input type="text" id="ca" name="name">
+          </div>
+
+          <button type="submit" class="btn btn-warning">Add SALAD</button>
+        </form>
+
+
+        <div id="eaten_list">  
+        {{#each salads}}
+                <li>
+            
+       <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input  name="{{this.name}}" value="{{this.name}}">
+          <button type="submit" class="btn btn-success">Update</button>
+        </form>
+                
+              </li>
+           {{/each}}
+        </ul>
+
+        </div>
+
+
