@@ -1,5 +1,9 @@
-<div id="form-container">
-  <form action="/login" method="POST">
+
+
+<div id="form-container-create">
+<h2>Welcome</h2>
+<h3>Create a new user here</h3>
+  <form action="/create" method="POST">
     <div class="form-group">
       <label for="name">Full Name</label>
       <input type="text" class="form-control" id="name" name="user_name">
@@ -14,5 +18,5 @@
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
+  <p>Already Have an Account? Click <a href="/login">Here to Login</a> </p>
 </div>
-

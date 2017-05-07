@@ -17,7 +17,6 @@ router.post('/login', function(req, res) {
     var requestedUser = req.body.user_name;
     var requestedEmail = req.body.user_email;
 
-'bosco123'
     users.findAll({
             where: {
                 name: requestedUser
@@ -36,6 +35,42 @@ router.post('/login', function(req, res) {
 
 });
 
+
+//create user routes
+router.get('/create', function(req, res) {
+    
+            res.render("create");
+       
+});
+
+
+router.post('/create', function(req, res) {
+     var createPwd = req.body.user_pwd;
+     var createUser = req.body.user_name;
+     var createEmail = req.body.user_email;
+           users.create({name: createUser,email: createEmail,password: createPwd})
+	.then(function(newData){
+      
+console.log(newData)
+		res.redirect('/success');
+	})
+
+console.log(req.body)
+});
+
+
+// success page route
+router.get('/success', function(req, res) {
+    
+            res.render("success");
+       
+});
+// map page route
+router.get('/map', function(req, res) {
+    
+            res.render("map");
+       
+});
 
 // Export routes for server.js to use.
 module.exports = router;
