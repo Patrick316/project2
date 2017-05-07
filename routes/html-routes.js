@@ -12,8 +12,28 @@ router.get('/login', function(req, res) {
         })
 });
 
-router.post('/check/login', function(req, res) {
-console.log("hello from login", req)
+router.post('/login', function(req, res) {
+    var requestedPwd = req.body.user_pwd;
+    var requestedUser = req.body.user_name;
+    var requestedEmail = req.body.user_email;
+
+'bosco123'
+    users.findAll({
+            where: {
+                name: requestedUser
+            },
+            where:{
+            	email: requestedEmail
+            },
+            where:{
+            	pwd: requestedPwd
+            }
+        })
+        .then(function(crud_data) {
+            console.log(curd_data);
+        })
+
+
 });
 
 
