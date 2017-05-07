@@ -19,57 +19,58 @@ router.post('/login', function(req, res) {
 
     users.findAll({
             where: {
-                name: requestedUser
-            },
-            where:{
-            	email: requestedEmail
-            },
-            where:{
-            	pwd: requestedPwd
+                name: requestedUser,
+                email: requestedEmail,
+                pwd: requestedPwd,
             }
         })
-        .then(function(crud_data) {
-            console.log(curd_data);
-        })
-
-
-});
-
-
+//         .then(function(crud_data) {
+//             console.log(curd_data);
+//            if(crud_data === 'null'){
+//            	res.render("login")
+//            }else{
+//            	res.render("map")
+//            }
+//          })
+// });
 //create user routes
 router.get('/create', function(req, res) {
-    
-            res.render("create");
-       
+
+    res.render("create");
+
 });
 
 
 router.post('/create', function(req, res) {
-     var createPwd = req.body.user_pwd;
-     var createUser = req.body.user_name;
-     var createEmail = req.body.user_email;
-           users.create({name: createUser,email: createEmail,password: createPwd})
-	.then(function(newData){
-      
-console.log(newData)
-		res.redirect('/success');
-	})
+    var createPwd = req.body.user_pwd;
+    var createUser = req.body.user_name;
+    var createEmail = req.body.user_email;
+    users.create({
+            name: createUser,
+            email: createEmail,
+            password: createPwd
+        })
+        .then(function(newData) {
 
-console.log(req.body)
+            console.log(newData)
+            res.redirect('/success');
+        })
+
+    console.log(req.body)
 });
 
 
 // success page route
 router.get('/success', function(req, res) {
-    
-            res.render("success");
-       
+
+    res.render("success");
+
 });
 // map page route
 router.get('/map', function(req, res) {
-    
-            res.render("map");
-       
+
+    res.render("map");
+
 });
 
 // Export routes for server.js to use.
