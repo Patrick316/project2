@@ -12,8 +12,8 @@ router.get('/login', function(req, res) {
         })
 });
 
-router.post('/login', function(req, res) {
-
+router.post('/check/login', function(req, res) {
+console.log("hello from login", req)
 });
 
 
