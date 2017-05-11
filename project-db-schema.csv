@@ -1,8 +1,0 @@
-id,name,email,password,selection,createdAt,updatedAt
-1,patrick,pat@pat.com,bosco123,NULL,"2017-05-07 14:46:00","2017-05-07 14:46:00"
-2,vence,NULL,NULL,NULL,"2017-05-07 20:12:56","2017-05-07 20:12:56"
-3,pete,ptumulty923@gmail.com,map,NULL,"2017-05-07 20:17:01","2017-05-07 20:17:01"
-4,frank,tee@gmail.com,miley,NULL,"2017-05-07 20:17:19","2017-05-07 20:17:19"
-5,ace,jeez@gmail.com,kilo,NULL,"2017-05-07 20:19:54","2017-05-07 20:19:54"
-6,tizzle,t@gmail.com,map,NULL,"2017-05-07 20:23:07","2017-05-07 20:23:07"
-7,tizzlee,tt@gmail.com,mapp,NULL,"2017-05-07 20:25:15","2017-05-07 20:25:15"
