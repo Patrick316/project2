@@ -8,19 +8,16 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      title: {
+      name: {
         type: Sequelize.STRING
       },
-      date: {
+      latitude: {
         type: Sequelize.STRING
       },
-      genre: {
+      longitude: {
         type: Sequelize.STRING
       },
       address: {
-        type: Sequelize.STRING
-      },
-      image: {
         type: Sequelize.STRING
       },
       createdAt: {

@@ -1,9 +1,10 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var location = sequelize.define('location', {
-    longitude: DataTypes.STRING,
+  var events = sequelize.define('events', {
+    name: DataTypes.STRING,
     latitude: DataTypes.STRING,
-    foreignKey: DataTypes.STRING
+    longitude: DataTypes.STRING,
+    address: DataTypes.STRING
   }, {
     classMethods: {
       associate: function(models) {
@@ -11,5 +12,5 @@ module.exports = function(sequelize, DataTypes) {
       }
     }
   });
-  return location;
+  return events;
 };

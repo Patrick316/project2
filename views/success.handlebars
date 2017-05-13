@@ -1,5 +1,140 @@
-<div id="form-container-success">
-<h2>Welcome</h2>
-<h3>Congrats!</h3>
-    <p>Click <a href="/login">Here to Login</a> </p>
-</div>
+
+
+		
+
+
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="wow fadeInDown animated" id="login-container" data-wow-delay="1.6s">
+          <div id="form-container-success">
+					<h2>Welcome</h2>
+					<h3>Congrats!</h3>
+					    <p>Click <a href="/login">Here to Login</a> </p>
+		  </div>
+		</div>
+      </div>
+     </div>
+    <script type="text/javascript">
+
+    
+
+    new WOW().init();
+
+    particlesJS("particle-js", {
+      "particles": {
+        "number": {
+          "value": 18,
+          "density": {
+            "enable": true,
+            "value_area": 552.4033491425909
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 3
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.68138006139568634,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 189.39543399174545,
+          "color": "#ffffff",
+          "opacity": 0.3815039575754227,
+          "width": 1.736124811591
+        },
+        "move": {
+          "enable": true,
+          "speed": .8,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 103.89610389610391,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    $("#particle-js").hide();
+    $("#particle-js").fadeIn(800);
+
+    $("#survey-container").hide();
+    $("#survey-container").fadeIn({queue: false, duration: 600}).animate({top:'180px'}, 550);
+
+
+    </script>
