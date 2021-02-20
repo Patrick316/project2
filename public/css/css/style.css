@@ -1,0 +1,32 @@
+  #form-container{
+    margin: 20%;
+    margin-left: 30%;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+  }
+    #form-container-create{
+    margin: 20%;
+    margin-left: 30%;
+    margin-top: 4%;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+  }
+      #form-container-success{
+    margin: 20%;
+    margin-left: 30%;
+    margin-top: 4%;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+  }
